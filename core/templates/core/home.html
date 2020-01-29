@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <form action="/api/syncWeather" method="post">
+        {% csrf_token %}
+        <a><button type="submit">Sync weather</button></a>
+    </form>
+   <a href="/api/currentWeather?q=London"><button>Get weather in London</button></a>
+</body>
+</html>
